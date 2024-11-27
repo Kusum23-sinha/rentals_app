@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-09-19 20:12:21.039726",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_izbw",
+  "customer_name",
+  "section_break_pjww",
+  "invoice_items",
+  "section_break_swpv",
+  "discount",
+  "total_amount",
+  "column_break_zlhk",
+  "payable_amount",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_swpv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Invoice",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Discount"
+  },
+  {
+   "fieldname": "payable_amount",
+   "fieldtype": "Currency",
+   "label": "Payable Amount"
+  },
+  {
+   "fieldname": "section_break_pjww",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "invoice_items",
+   "fieldtype": "Table",
+   "label": "Invoice Items",
+   "options": "Invoice items",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_zlhk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_izbw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-09-24 12:55:03.127072",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "Invoice",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "customer_name"
+}

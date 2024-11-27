@@ -6,6 +6,9 @@ app_email = "kusumsinha23@navgurukul.org"
 app_license = "mit"
 # required_apps = []
 
+fixtures = ["Vehicle Type", "Rentals Settings"]
+fixtures = [{"dt": "Vehicle Type", "filters": {"is_standard": 1}}]
+
 # Includes in <head>
 # ------------------
 
@@ -105,6 +108,11 @@ app_license = "mit"
 # permission_query_conditions = {
 # 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
 # }
+permission_query_conditions = {
+	"Vehicle": "rentals.api.get_query_conditions_for_vehicle",
+}
+
+
 #
 # has_permission = {
 # 	"Event": "frappe.desk.doctype.event.event.has_permission",
@@ -130,8 +138,23 @@ app_license = "mit"
 # 	}
 # }
 
+# doc_events = {
+# 	"ToDo": {
+# 		"before_insert": "rentals.api.throw_emoji"
+# 	}
+# }
+
 # Scheduled Tasks
 # ---------------
+
+# scheduler_events = {
+#     "Cron": {
+#         "55 20 * * 1": [
+#             "rentals.api.send_payment_reminders"
+#         ]
+#     }
+# }
+
 
 # scheduler_events = {
 # 	"all": [

@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-03 14:42:49.141230",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "child_doc_name",
+  "parent_dock_link",
+  "parent_full_name",
+  "parent_date_and_value_section",
+  "table_mpgd"
+ ],
+ "fields": [
+  {
+   "fieldname": "child_doc_name",
+   "fieldtype": "Data",
+   "label": "Child Doc Name"
+  },
+  {
+   "fieldname": "parent_dock_link",
+   "fieldtype": "Link",
+   "label": "Parent Dock link",
+   "options": "Parent Doc"
+  },
+  {
+   "fieldname": "parent_full_name",
+   "fieldtype": "Data",
+   "label": "Parent full name"
+  },
+  {
+   "fieldname": "parent_date_and_value_section",
+   "fieldtype": "Section Break",
+   "label": "Parent Date and Value"
+  },
+  {
+   "fieldname": "table_mpgd",
+   "fieldtype": "Table",
+   "options": "Child Child table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-03 14:57:18.217353",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "Child Doc",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
